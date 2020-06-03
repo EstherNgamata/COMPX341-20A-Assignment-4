@@ -7,7 +7,8 @@ var request = REQUEST.defaults( {
     strictSSL: false
 });
 
-var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=imperial";
+//var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=imperial";
+var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?q=Hamilton&appid=pk.eyJ1IjoiZXN0aGVybmdhbWF0YSIsImEiOiJja2F6Ym15Nm0waHVvMnptaTJhaDd2MDI0In0.4-XnqLJAgixPINBBkMcY3g&units=metric";
 
 exports.getWeather = function(req, res) {
 	var zip = req.query.zip;
